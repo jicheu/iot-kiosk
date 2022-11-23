@@ -19,6 +19,6 @@ case "$daemon" in
     ;;
 esac
 
-[ -n "$(snapctl get url)" ] || snapctl set url="https://www.electronjs.org/"
+[ -n "$(snapctl get url)" ] || snapctl set url="http://localhost/"
 
 snapctl restart $SNAP_INSTANCE_NAME
